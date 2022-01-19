@@ -45,7 +45,7 @@ public class MemberValidator implements Validator {
 		//검증2 : 내장메서드를 통한 검증(패스워드 검증)
 		/*
 		유효성 검증을 위해 전달되는 객체가 커맨드 객체가 아니라면 validate()
-		메서드 내브로 진입자체가 불가능하므로 해당 메서드에서 pw라는 문자열은
+		메서드 내부로 진입자체가 불가능하므로 해당 메서드에서 pw라는 문자열은
 		getter()메서드를 통해 DTO에 저장된 패스워드를 얻어오게 된다.
 		 */
 		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "pw", "pwError");

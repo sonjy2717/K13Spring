@@ -51,7 +51,6 @@ public class DIController {
 				new GenericXmlApplicationContext(configLocation);
 		Person person = ctx.getBean("person", Person.class);
 		
-		
 		mv.setViewName("04DI/mydi2");
 		mv.addObject("person", person.getInfo());
 		
